@@ -1,15 +1,10 @@
-import {
-  OpenAI,
-  ConsoleLogger,
-  Logger,
-  Env,
-  ChatMessage,
-} from "@evo-ninja/agent-utils";
+import { OpenAI, ConsoleLogger, Logger, Env, ChatMessage } from "../";
+
 import dotenv from "dotenv";
 import path from "path";
 
 dotenv.config({
-  path: path.join(__dirname, "../../../../.env")
+  path: path.join(__dirname, "../../../../.env"),
 });
 
 describe.skip("LLM Test Suite", () => {

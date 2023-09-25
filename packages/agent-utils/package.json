@@ -5,6 +5,7 @@
   "main": "./build/index.js",
   "scripts": {
     "build": "rimraf build && tsc",
+    "test": "jest --runInBand --verbose --rootDir . --config ../../jest.config.js",
     "codegen:js-engine": "polywrap codegen -m ./src/wrap/js-engine/polywrap.yaml --codegen-dir ./src/wrap/js-engine/types"
   },
   "dependencies": {
@@ -14,7 +15,8 @@
     "fuse.js": "^6.6.2",
     "json5": "^2.2.3",
     "openai": "~3.3.0",
-    "path-browserify": "1.0.1"
+    "path-browserify": "1.0.1",
+    "chromadb": "1.5.11"
   },
   "devDependencies": {
     "@types/figlet": "~1.5.6",
